@@ -10,7 +10,7 @@ def MAIN(ip):
 
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect(host, port, user, pswd,)
+    ssh.connect(host, port, user, pswd,)
 
     chan= ssh.invoke_shell()
     chan.send('enable\n')
@@ -55,7 +55,7 @@ def Loop():
 if __name__=='__main__':
     try:
         #a = input('>>>')
-        MAIN(a)
+        loop()
 		
     except Exception as e:
         print(e)

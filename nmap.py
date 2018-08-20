@@ -1,6 +1,7 @@
 import sys
 import nmap
  
+
 scan_row = []
 input_data = input('Please input hosts and port: ')
 #以空格分隔
